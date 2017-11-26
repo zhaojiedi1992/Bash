@@ -10,8 +10,10 @@
 # configurate rpm and install some rpm 
 . setrpm.sh
 
-# alias set 
+# set /etc/motd file 
+. setmotd.sh
 
+# alias set 
 ! grep ". alias.sh" ~/.bashrc && sed -i '/^alias/d'  ~/.bashrc && sed -i '/^# Source global/i . alias.sh' ~/.bashrc 
 
 # set path
