@@ -61,7 +61,7 @@ declare -i ret=$?
 
 # start httpd 
 chown -R apache:apache /var/run/httpd
-apachectl stop 2> /dev/null
+apachectl stop &> /dev/null
 killall httpd
 ip=$(ifconfig ens33 |sed -nr '2s@.*inet (.*) netmask.*@\1@p')
 apachectl start && elinks $ip --source |grep "works" && echo " finish it ok " ||echo "not ok"
