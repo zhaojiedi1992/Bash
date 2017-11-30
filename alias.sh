@@ -25,6 +25,8 @@ alias l1='ls -1'
 # cd dir
 
 alias cdnet='cd /etc/sysconfig/network-scripts'
+alias cdyum='cd /etc/yum.repos.d'
+
 # git 
 alias ga='git add'
 alias gaa='git add --all'

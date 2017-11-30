@@ -7,4 +7,13 @@
 #Version    :V1.0
 #Other      :
 #================================================
+# configurate rpm and install some rpm 
+. rpm.sh
+
+# alias set 
+sed -i '/^alias/d'  ~/.bashrc
+sed -i '/^# Source global/i . alias.sh' ~/.bashrc 
+
+# set PS1
+. ps.sh
 

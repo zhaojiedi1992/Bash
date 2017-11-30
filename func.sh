@@ -41,3 +41,11 @@ is_valid_function_name() {
 	function_name_re="(_|[[:alpha:]])[[:alnum:]_]*$"
 	test_re $1 $function_name_re
 }
+is_yes(){
+	yes_re="^[Yy]([Ee][Ss])?$"
+	test_re $1 $yes_re
+}
+is_no(){
+	no_re="^[Nn]([Nn])?$"
+	test_re $1 $no_re
+}
