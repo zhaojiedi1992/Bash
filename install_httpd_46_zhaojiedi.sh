@@ -76,4 +76,4 @@ apachectl start && elinks $ip --source |grep "works" && echo " finish it ok " ||
  
 # start httpd on boot 
 [ $version -ge 7 ] && systemctl enable httpd
-[ $version -eq 6 ] && chkconfig httpd off
+[ $version -eq 6 ] && chkconfig httpd on
