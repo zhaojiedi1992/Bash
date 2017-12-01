@@ -2,7 +2,7 @@
 #================================================
 #FileName   :alias_46_zhaojiedi.sh
 #Author     :zhaojiedi
-#Description:
+#Description: set alias 
 #DateTime   :2017-11-24 08:51:22
 #Version    :V1.0
 #Other      :
@@ -17,7 +17,8 @@ alias grep='grep --color'
 alias egrep='egrep --color'
 
 # list 
-alias ll= 'ls -l'
+alias ls='ls --color'
+alias ll='ls -l'
 alias la='ls -a'
 alias lA='ls -A'
 alias l1='ls -1'
@@ -32,7 +33,6 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gs='git status'
 alias gc='git commit'
-alias gct='git commit -m "- comment"'
 alias gcm='git commit -m'
 alias gca='git commit --amend'
 alias gco='git checkout'
