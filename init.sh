@@ -8,12 +8,14 @@
 #Other      :
 #================================================
 # configurate rpm and install some rpm 
-. rpm.sh
+. setrpm.sh
 
 # alias set 
-sed -i '/^alias/d'  ~/.bashrc
-sed -i '/^# Source global/i . alias.sh' ~/.bashrc 
 
-# set PS1
-. ps.sh
+! grep ". alias.sh" ~/.bashrc && sed -i '/^alias/d'  ~/.bashrc && sed -i '/^# Source global/i . alias.sh' ~/.bashrc 
 
+# set path
+. setpath.sh
+
+# scan scsi 
+#. scan_scsi

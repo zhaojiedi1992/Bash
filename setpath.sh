@@ -8,5 +8,10 @@
 #Other      :
 #================================================
 
+# set PS1
 ! grep PS1 ~/.bash_profile &&  echo PS1=\"'\033[1;33m[\u@\h \W]$ \033[0m'\" >> ~/.bash_profile
+
+
+# set PATH
+
 
