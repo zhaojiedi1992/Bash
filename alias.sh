@@ -22,6 +22,7 @@ alias ll='ls -l'
 alias la='ls -a'
 alias lA='ls -A'
 alias l1='ls -1'
+alias ld='ls -d */'
 
 # cd dir
 
