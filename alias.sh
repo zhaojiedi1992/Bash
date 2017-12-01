@@ -46,3 +46,6 @@ alias gb='git branch'
 alias gg='git grep'
 alias gmv='git mv'
 
+# other
+alias fdisk='fdisk -cu'
+
