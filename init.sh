@@ -7,18 +7,20 @@
 #Version    :V1.0
 #Other      :
 #================================================
+
+# init dir
+init_dir=/git/Bash
+
 # configurate rpm and install some rpm 
-. setrpm.sh
+. $init_dir/setrpm.sh
 
 # set /etc/motd file 
-. setmotd.sh
+. $init_dir/setmotd.sh
 
-! grep ". aliases.sh" ~/.bashrc && sed -i '/^alias/d'  ~/.bashrc && sed -i '/^# Source global/i# if you set aliases ,please goto aliashes.sh\n. aliases.sh' ~/.bashrc && . ~/.bashrc
 # alias set 
-! grep ". alias.sh" ~/.bashrc && sed -i '/^alias/d'  ~/.bashrc && sed -i '/^# Source global/i . alias.sh' ~/.bashrc 
-
+! grep "aliases.sh" ~/.bashrc && sed -i '/^alias/d'  ~/.bashrc && sed -i "/^# Source global/i# if you set aliases ,please goto $init_dir/aliashes.sh\n. $init_dir/aliases.sh" ~/.bashrc && . ~/.bashrc
 # set path
-. setpath.sh
+. $init_dir/setpath.sh
 
 # scan scsi 
 #. scan_scsi
