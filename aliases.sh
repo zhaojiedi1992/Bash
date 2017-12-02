@@ -17,7 +17,7 @@ alias grep='grep --color'
 alias egrep='egrep --color'
 
 # list 
-alias ls='ls --color'
+alias ls='ls --color=auto '
 alias ll='ls -l'
 alias la='ls -a'
 alias lA='ls -A'
