@@ -12,7 +12,7 @@
 
 # alias set 
 
-! grep ". alias.sh" ~/.bashrc && sed -i '/^alias/d'  ~/.bashrc && sed -i '/^# Source global/i . alias.sh' ~/.bashrc && . ~/.bashrc
+! grep ". aliases.sh" ~/.bashrc && sed -i '/^alias/d'  ~/.bashrc && sed -i '/^# Source global/i# if you set aliases ,please goto aliashes.sh\n. aliases.sh' ~/.bashrc && . ~/.bashrc
 # set path
 . setpath.sh
 
