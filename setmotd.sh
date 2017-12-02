@@ -10,4 +10,4 @@
 
 
 
-echo -e ${GREEN}Welcom you this system${RESET} >>/etc/motd
+echo -e ${GREEN}Welcom you this system${RESET} > /etc/motd
