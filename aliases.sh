@@ -47,5 +47,5 @@ alias gg='git grep'
 alias gmv='git mv'
 
 # other
-alias fdisk='fdisk -cu'
+#alias fdisk='fdisk -cu'
 

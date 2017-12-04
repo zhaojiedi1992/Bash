@@ -14,4 +14,8 @@
 
 # set PATH
 
+# declear other 
+
+declare -i RELEASE_VERSION=`cat /etc/system-release |sed -r 's@.* release ([0-9]+)\..*@\1@'`
+export RELEASE_VERSION
 

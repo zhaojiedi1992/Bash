@@ -1,3 +1,14 @@
+# start auto
+if [ $RELEASE_VERSION -ge 7 ] ; then 
+	systemctl start autofs
+	systemctl enable autofs
+else 
+	chkconfig autofs on
+	service autofs start
+fi
+
+
+
 mkdir -pv /etc/yum.repos.d/bak
 mv /etc/yum.repos.d/*.* /etc/yum.repos.d/bak
 echo "
