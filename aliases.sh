@@ -12,6 +12,9 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
+# some comm 
+alias cls='clear'
+
 # grep 
 alias grep='grep --color'
 alias egrep='egrep --color'
