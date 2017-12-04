@@ -48,4 +48,5 @@ alias gmv='git mv'
 
 # other
 #alias fdisk='fdisk -cu'
+alias sync3='sync;sleep 1;sync;sleep 1; sync;sleep 1'
 
