@@ -1,4 +1,12 @@
 # start auto
+if [ ! -f /etc/yum.repos.d/cdrom.repo ] ; then 
+	cp files/cdrom.repo /etc/yum.repos.d/
+else 
+	mkdir /etc/yum.repos.d/bak -pv 
+	mv /etc/yum.repos.d/*.repo /etc/yum.repos.d/bak
+fi
+
+
 if [ $RELEASE_VERSION -ge 7 ] ; then 
 	systemctl start autofs
 	systemctl enable autofs
@@ -7,18 +15,6 @@ else
 	service autofs start
 fi
 
-
-
-mkdir -pv /etc/yum.repos.d/bak
-mv /etc/yum.repos.d/*.* /etc/yum.repos.d/bak
-echo "
-[base]
-name=base
-baseurl=file:///misc/cd
-gpgcheck=0
-cost=20
-enable=1
-" >> /etc/yum.repos.d/base.repo
 
 yum clean all
 yum makecache
