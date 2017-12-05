@@ -54,12 +54,12 @@ readlink_while(){
 	while true ; do 
 		tmp=`readlink $src`
 		if [ -z "$tmp" ] ; then 
-			echo  $src
-			return 0
+			echo  $src &&  return 0
 		else
 			src=$tmp
 		fi
 	done
+	echo $src && exit 0
 }
 			
 
