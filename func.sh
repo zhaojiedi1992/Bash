@@ -49,3 +49,24 @@ is_no(){
 	no_re="^[Nn]([Nn])?$"
 	test_re $1 $no_re
 }
+readlink_while(){
+	src=$1
+	while true ; do 
+		tmp=`readlink $src`
+		if [ -z "$tmp" ] ; then 
+			echo  $src
+			return 0
+		else
+			src=$tmp
+		fi
+	done
+}
+			
+
+
+
+
+
+
+
+
