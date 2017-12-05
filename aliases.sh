@@ -31,6 +31,10 @@ alias ld='ls -d */'
 
 alias cdnet='cd /etc/sysconfig/network-scripts'
 alias cdyum='cd /etc/yum.repos.d'
+alias vieth0='vim /etc/sysconfig/network-scripts/ifcfg-eth0'
+alias vieth1='vim /etc/syconfig/network-scripts/ifcfg-eth1'
+alias viens33='vim /etc/sysconfig/network-scripts/ifcfg-ens33'
+alias viens37='vim /etc/sysconfig/network-scripts/ifcfg-ens37'
 
 # git 
 alias ga='git add'
