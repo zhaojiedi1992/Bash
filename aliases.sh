@@ -14,6 +14,7 @@ alias rm='rm -i'
 
 # some comm 
 alias cls='clear'
+alias tailf='tail -f'
 
 # grep 
 alias grep='grep --color'
