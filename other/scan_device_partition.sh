@@ -2,12 +2,12 @@
 #================================================
 #FileName   :scan_partitions_46_zhaojiedi.sh
 #Author     :zhaojiedi
-#Description:
+#Description:扫描指定设备的分区， 添加完毕分区或者删除分区后使用
 #DateTime   :2017-11-30 18:03:27
 #Version    :V1.0
 #Other      :
 #================================================
-[ $# -ne 1 ] && echo " must be a parameter" && exit 1 
+[ $# -ne 1 ] && echo -e " must be a parameter,\nUsage:\t$0 /dev/you_device" && exit 1 
 #device=/dev/sdba
 device=$1
 declare -i RELEASE_VERSION=`cat /etc/system-release |sed -r 's@.* release ([0-9]+)\..*@\1@'`
