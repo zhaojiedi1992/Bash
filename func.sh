@@ -62,7 +62,13 @@ readlink_while(){
 	echo $src && exit 0
 }
 			
-
+number_change(){
+	src=$1
+	dst=$2
+	val=$3
+	echo -e "ibase=$src\nobase=$dst\n$val" |bc 
+	
+}
 
 
 
