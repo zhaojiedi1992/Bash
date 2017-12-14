@@ -16,6 +16,7 @@ alias rm='rm -i'
 alias cls='clear'
 alias tailf='tail -f'
 alias ctl='systemctl'
+alias yumgrep='yum list all |egrep '
 
 # grep 
 alias grep='grep --color'
