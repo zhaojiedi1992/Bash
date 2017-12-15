@@ -15,7 +15,7 @@ alias rm='rm -i'
 # some comm 
 alias cls='clear'
 alias tailf='tail -f'
-alias ctl='systemctl'
+alias sctl='systemctl'
 alias yumgrep='yum list all |egrep '
 
 # grep 
@@ -59,4 +59,5 @@ alias gmv='git mv'
 # other
 #alias fdisk='fdisk -cu'
 alias sync3='sync;sleep 1;sync;sleep 1; sync;sleep 1'
-
+alias rmswp='rm -rf ~/*.swp'
+alias dfinfo='df --output=source,size,used,avail,pcent,target,itotal,iused,ipcent,iavail,file,fstype'
