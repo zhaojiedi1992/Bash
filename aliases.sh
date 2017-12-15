@@ -15,7 +15,7 @@ alias rm='rm -i'
 # some comm 
 alias cls='clear'
 alias tailf='tail -f'
-alias ctl='systemctl'
+alias sctl='systemctl'
 alias yumgrep='yum list all |egrep '
 
 # grep 
