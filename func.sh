@@ -70,7 +70,18 @@ number_change(){
 	
 }
 
-
+get_os_version(){
+	echo ` cat /etc/system-release |sed -r 's@.*release ([0-9]+).*@\1@' `
+}
+get_ip_of_eth0(){
+	echo 	`ip a show dev eth0 | sed -nr '/[[:space:]]+inet /s@[[:space:]]+inet (.*)/.*@\1@p'`
+}
+print_ok(){
+	echo -e ${GREEN}OK${RESET}
+}
+print_failed(){
+	echo  -e ${RED}FAILED${RESET}
+}
 
 
 
