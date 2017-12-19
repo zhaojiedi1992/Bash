@@ -1,11 +1,11 @@
-selinux stop
+#selinux stop
 
-change netcard name
+#change netcard name
 
-firewalld
+#firewalld
 
-vimrc
+#vimrc
 
-package
+#package
 
 performance command
