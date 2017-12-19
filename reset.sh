@@ -11,6 +11,12 @@
 # init dir
 init_dir=/git/Bash
 
+# set path
+. $init_dir/set_path.sh
+
+# set_selinux_and_firewalld
+. $init_dir/set_selinux_and_firewalld.sh
+
 # configurate rpm and install some rpm 
 . $init_dir/set_yum.sh
 
@@ -18,15 +24,19 @@ init_dir=/git/Bash
 . $init_dir/set_motd.sh
 
 # alias set 
-! grep "aliases.sh" ~/.bashrc && sed -i '/^alias/d'  ~/.bashrc && sed -i "/^# Source global/i# if you set aliases ,please goto $init_dir/aliashes.sh\n. $init_dir/aliases.sh" ~/.bashrc && . ~/.bashrc
-# set path
-. $init_dir/set_path.sh
+. $init_dir/set_alias.sh
+
 # set vimrc 
 . $init_dir/set_vimrc.sh
+
 # copy some scripts
 [ ! -d ~/bin ]  && mkdir ~/bin
-cp files/touchsh.sh ~/bin/touchsh
+\cp -r $init_dir/bin/* ~/bin/
+
 # set netcard
 . $init_dir/set_netcard.sh
 # scan scsi 
 #. scan_scsi
+#################################################################################
+#reboot
+#################################################################################
