@@ -1,5 +1,4 @@
-if [ -f ~/.vimrc ] ; do 
+if [ -f ~/.vimrc ] ; then 
 	\mv ~/.vimrc ~/.vimrc.bak
-done
 fi
-\cp files/.vimrc ~/.vimrc
+\cp files/vimrc ~/.vimrc
