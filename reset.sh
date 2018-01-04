@@ -29,6 +29,9 @@ init_dir=/git/Bash
 # set vimrc 
 . $init_dir/set_vimrc.sh
 
+# set sshd.sh
+. $init_dir/set_sshd.sh
+
 # copy some scripts
 [ ! -d ~/bin ]  && mkdir ~/bin
 \cp -r $init_dir/bin/* ~/bin/
