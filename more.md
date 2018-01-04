@@ -10,6 +10,6 @@
 
 #performance command
 
-ssh 
+#ssh 
 
-random 
+#random 
