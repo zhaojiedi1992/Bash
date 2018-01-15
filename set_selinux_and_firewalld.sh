@@ -17,7 +17,7 @@ elif [ "$RELEASE_VERSION" -le 6 ] ; then
 	service iptables stop
 	chkconfig iptables off
 else
-	echo "wrong "
+	echo "RELEASE_VERSION is wrong"
 fi
 
 
