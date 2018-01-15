@@ -20,4 +20,12 @@ if [ $RELEASE_VERSION -eq 7 ] ;then
 		grub2-mkconfig -o /boot/grub2/grub.cfg
 	fi
 fi
+
+# if centos6, then stop NetworkManager and start network
+if [ "$RELEASE_VERSION" -eq 6 ] ; then 
+	service NetworkManager stop
+	chkconfig NetworkManager off
+	service network restart
+	chkcofnig network on
+fi
 #reboot

@@ -20,6 +20,7 @@ yum clean all
 yum makecache
 
 
-# start install 
-yum install -y  tree ftp lftp telnet 
+# start some packages, 
+yum install -y  tree  lftp vim wget -q
+
 

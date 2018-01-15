@@ -10,6 +10,11 @@
 
 #performance command
 
-#ssh 
+ssh 
+known_host,
 
 #random 
+
+#enable epel
+#editor
+#network
