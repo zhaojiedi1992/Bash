@@ -1,8 +1,23 @@
 # Bash
 some spractical bash scripts
 ## USAGE
-1. insert a cdrom 
-1. 
+
+```
+    ;; insert a cdrom 
+    # mkdir /mnt/cdrom 
+    # mount /dev/cdrom /mnt/cdrom
+    # rpm -ivh /mnt/cdrom/Package/lrzsz*.rpm
+    # rpm -ivh /mnt/cdrom/Package/unzip*.rpm
+    ;; use xshell connect 
+    # rz 
+    ;; select Bash-master.zip
+    # mkdir /git
+    # unzip Bash-master.zip -d /git
+    # mv /git/Bash-master /git/Bash
+    # cd /git/Bash
+    # source reset.sh
+```
+
 ##  reset.sh
 init works
 
