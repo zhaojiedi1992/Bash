@@ -1,9 +1,10 @@
 # start auto
-if [ ! -f /etc/yum.repos.d/cdrom.repo ] ; then 
-	cp files/cdrom.repo /etc/yum.repos.d/
-else 
+if [ -e /etc/yum.repos.d/CentOS-Vault.repo ] ; then 
 	mkdir /etc/yum.repos.d/bak -pv 
 	\mv /etc/yum.repos.d/*.repo /etc/yum.repos.d/bak
+fi
+if [ ! -e /etc/yum.repos.d/cdrom.repo ] ; then 
+	cp files/cdrom.repo /etc/yum.repos.d/
 fi
 
 

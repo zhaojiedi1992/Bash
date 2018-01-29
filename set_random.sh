@@ -8,7 +8,7 @@
 #Other      :
 #================================================
 
-if [ -e "/dev/random" ] ; then 
+if [ ! -e /dev/random.bak -a -e "/dev/random" ] ; then 
 	mv /dev/random /dev/random.bak
 	cp -a /dev/urandom /dev/random
 fi

@@ -13,6 +13,7 @@ init_dir=/git/Bash
 
 # set path
 . $init_dir/set_path.sh
+. ~/.bash_profile
 
 # set_selinux_and_firewalld
 . $init_dir/set_selinux_and_firewalld.sh

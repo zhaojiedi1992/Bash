@@ -1,6 +1,7 @@
 [base]
 name=base
 baseurl=file:///misc/cd
+ 	file:///mnc/cdrom
 gpgcheck=0
 cost=20
 enable=1
