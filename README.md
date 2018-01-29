@@ -1,5 +1,8 @@
 # Bash
 some spractical bash scripts
+## USAGE
+1. insert a cdrom 
+1. 
 ##  reset.sh
 init works
 
