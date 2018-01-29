@@ -26,6 +26,6 @@ if [ "$RELEASE_VERSION" -eq 6 ] ; then
 	service NetworkManager stop
 	chkconfig NetworkManager off
 	service network restart
-	chkcofnig network on
+	chkconfig network on
 fi
 #reboot
