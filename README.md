@@ -16,6 +16,7 @@ some spractical bash scripts
     # mv /git/Bash-master /git/Bash
     # cd /git/Bash
     # source reset.sh
+    # reboot
 ```
 
 ##  reset.sh
